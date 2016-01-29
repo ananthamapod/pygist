@@ -1,0 +1,23 @@
+{
+  name: "pygist",
+  version: "0.1",
+  description: "Tool for automatically running python in the browser console from a gist",
+  content_scripts: [
+    {
+    matches: [
+      "*://gist.githubusercontent.com/*.py"
+    ],
+    js: [
+      "jquery.min.js",
+      "run.js"
+    ],
+    run_at: "document_start"
+    }
+  ],
+  icons: {
+  16: "images/logo-16.png",
+  48: "images/logo-48.png",
+  128: "images/logo-128.png"
+  },
+  manifest_version: 2
+}

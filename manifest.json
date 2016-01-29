@@ -9,6 +9,8 @@
     ],
     js: [
       "jquery.min.js",
+      "skulpt.min.js",
+      "skulpt-stdlib.js",
       "run.js"
     ],
     run_at: "document_start"

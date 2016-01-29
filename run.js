@@ -13,7 +13,6 @@ function loadXMLDoc(theURL)
     {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-            console.log('running following github gist');
             run_python(xmlhttp.responseText);
 
         }
@@ -23,6 +22,9 @@ function loadXMLDoc(theURL)
 }
 
 function run_python(code){
+
+    console.log(">>>")
+
     console.log(code);
 
     Sk.configure({output:console.log});
@@ -37,11 +39,7 @@ console.log('Welcome to pygist!')
 
 console.log("I'm going to run the code on this page, cool?")
 
-
 loadXMLDoc(window.location.href);
-
-
-console.log(">>>")
 
 
 

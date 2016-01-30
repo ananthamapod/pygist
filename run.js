@@ -1,6 +1,8 @@
 
-function loadXMLDoc(theURL)
-{
+function loadXMLDoc(theURL){
+    /*
+    Downloads the html content of any given webpage. In this case a github gist rawusercontent. 
+    */
     if (window.XMLHttpRequest)
     {// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
         xmlhttp=new XMLHttpRequest();
